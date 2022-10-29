@@ -1,63 +1,50 @@
-# CodeIgniter 4 Application Starter
+# petz_care
+Sebuah Aplikasi toko sepatu berbasis website yang dibangun dengan code igniter4.
 
-## What is CodeIgniter?
+## Highlight Application
+![Screenshot_36](https://user-images.githubusercontent.com/75663902/198822603-522ad597-7e93-446d-a004-30c2aa03455a.png)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+## :hammer: How to Build in Android
+type in your terminal `Codeigniter4`
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
 
-## Installation & updates
+# Panduan Penggunaan
+1. Siapkan server lokal dengan xampp
+2. Import database yang telah disediakan
+3. Install aplikasi menggunakan "php spark serve"
+4. Buka website dengan browser
+5. Login jika sudah memiliki akun, jika belum silakan pilih menu signup
+6. Jika login berhasil aplikasi siap digunakan dan diarahkan ke halaman home
+7. Pilih shop untuk memilih daftar produk
+8. Jika sudah memilih produk, anda abisa mengisi alamat dan mengecek ongkos kirim
+9. lanjutkan ke klik tombol beli
+10. Anda akan diarahkan ke halaman history
+11. Klik history untuk mengunduh invoice
+12. Selesai
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
 
-## Setup
+### Design Inspiration
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+- [fushi master]
 
-## Important Change with index.php
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+### Screenshot
+![Screenshot_2](https://user-images.githubusercontent.com/75663902/198822924-3432a6be-b62f-4664-9e62-dffede94d843.png)
+[Screenshot_4](https://user-images.githubusercontent.com/75663902/198822930-90b7d548-f57a-4dc1-b977-62bb8336deec.png)
+![Screenshot_5](https://user-images.githubusercontent.com/75663902/198822931-48a9479e-d75a-434a-ac6f-7e9148434832.png)
+![Screenshot_6](https://user-images.githubusercontent.com/75663902/198822932-1819e8c0-e9c3-4414-a773-bf797b1275a8.png)
+![Screenshot_7](https://user-images.githubusercontent.com/75663902/198822933-c5269b79-430e-4b65-9454-51860d2d51fd.png)
+![Screenshot_36](https://user-images.githubusercontent.com/75663902/198822935-3984162b-3158-43e4-bdff-04556d318605.png)
+![Screenshot_1](https://user-images.githubusercontent.com/75663902/198822937-11250fe9-4db3-4925-9c3c-9e67253f928b.png)
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+#Dibuat Menggunakan!
+Jenis | Framework | Bahasa Pemrograman | Database
+:----------:|:----------:|:-------------:|:--------:
+`Website` | [CodeIgniter4](https://codeigniter.com/)  | [PHP](https://www.php.net/) | [MySql](https://www.mysql.com/)
 
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+### Resources
+__Sumber Gambar__ - [Unsplash](https://unsplash.com/)<br>
+__Icon__ - [Flaticon](https://www.flaticon.com/)<br>
