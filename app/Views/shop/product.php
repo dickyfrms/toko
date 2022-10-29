@@ -54,6 +54,13 @@
 		'value' => 'Beli', 
         'class' => 'primary-btn pd-cart'
 	];
+
+	$discount = [
+		'name' => 'discount',
+		'id' => 'discount', 
+		'value' => null,
+        'class' => 'form-control',
+	];
 ?>
     <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section">
@@ -349,8 +356,9 @@
 <?= $this->section('script') ?>
 <script>
 	$('document').ready(function(){
+		var discount = 50/100
 		var jumlah_pembelian = 1;
-		var harga = <?= $barang->harga ?>;
+		var harga = <?= $barang->harga - discount?>;
 		var ongkir = 0;
 		$("#provinsi").on('change', function(){
 			$("#kabupaten").empty();
