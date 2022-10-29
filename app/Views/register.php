@@ -69,7 +69,15 @@ $errors = $session->getFlashdata('errors');
                                 <label for="con-pass">Confirm Password *</label>
                                 <?= form_password($repeatPassword) ?>
                             </div> 
-                            <?= form_submit('submit', 'Register',['class'=>'site-btn register-btn']) ?>
+                          <div class="group-input">
+                                <label for="con-pass">Confirm Password *</label>
+                                <?= form_password($repeat) ?>
+                            </div> 
+                          <div class="group-input">
+                                <label for="con-pass">Confirm Password *</label>
+                                <?= form_password($repeat) ?>
+                            </div> 
+                            <?= form_submit('submit', 'Register','repeat'['class'=>'site-btn register-btn']) ?>
                         <?= form_close() ?>
                         <div class="switch-login">
                             <a href="<?= site_url('login') ?>" class="or-login">Or Login</a>
