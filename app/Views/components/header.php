@@ -61,7 +61,8 @@ $uri = service('uri');
                         <ul class="depart-hover">
                             <li class="active"><a href="<?= site_url('shop/category/2') ?>">Women’s Clothing</a></li>
                             <li><a href="<?= site_url('shop/category/1') ?>">Men’s Clothing</a></li> 
-                            <li><a href="<?= site_url('shop/category/3') ?>">Kid's Clothing</a></li> 
+                            <li><a href="<?= site_url('shop/category/2') ?>">Kid's Clothing</a></li> 
+			    <li><a href="<?= site_url('shop/category/3') ?>">Kid's Clothing</a></li> 
                         </ul>
                     </div>
                 </div>
@@ -69,6 +70,7 @@ $uri = service('uri');
                     <ul>
                         <li <?= ($uri->getSegment(1)=='')?'class="active"':''?>><a href="<?= site_url('/') ?>">Home</a></li>
                         <li <?= ($uri->getSegment(1)=='shop')?'class="active"':''?>><a href="<?= site_url('shop') ?>">Shop</a></li>  
+                        <li <?= ($uri->getSegment(1)=='')?'class="active"':''?>><a href="<?= site_url('/') ?>">About</a></li>
                         <li <?= ($uri->getSegment(1)=='contact')?'class="active"':''?>><a href="<?= site_url('contact') ?>">Contact</a></li>  
                         <?php if($session->get('isLoggedIn')): ?> 
                         <li <?= ($uri->getSegment(1)=='transaction')?'class="active"':''?>><a href="<?= site_url('transaction') ?>">Transaction</a></li>
